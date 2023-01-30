@@ -4,13 +4,13 @@ inputs:
   lein-version:
     description: 'Version of leiningen to install'
     required: false
-    default: '2.10.0'
+    default: '2.9.1'
 runs:
   using: "composite"
   steps:
     - name: Install leiningen
       env:
-        LEIN_VERSION: 2.10.0
+        LEIN_VERSION: 2.9.1
         LEIN_INSTALL: /usr/local/bin/
         LEIN_ROOT: 1
       shell: bash
